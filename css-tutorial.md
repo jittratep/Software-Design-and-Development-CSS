@@ -390,9 +390,127 @@ background-size: cover;
 
 ### ผลการทดลอง
 ```html
+<!-- ไฟล์ index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>การทดลองที่ 3: สีและพื้นหลัง</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card-container">
+        
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('product/ระเบิดของเล่น.jpg');"></div>
+            <div class="product-info">
+                <h2 class="product-title">สินค้าตัวอย่างที่ 1</h2>
+                <p class="product-price">฿1,999</p>
+                <p class="product-description">ของเล่นสำหรับเด็ก</p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
 
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('product/ระเบิดของเล่น.jpg');"></div>
+            <div class="product-info">
+                <h2 class="product-title">สินค้าตัวอย่างที่ 2</h2>
+                <p class="product-price">฿2,490</p>
+                <p class="product-description">ของเล่นสำหรับเด็ก</p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('product/ระเบิดของเล่น.jpg');"></div>
+            <div class="product-info">
+                <h2 class="product-title">สินค้าตัวอย่างที่ 3</h2>
+                <p class="product-price">฿990</p>
+                <p class="product-description">ของเล่นสำหรับเด็ก</p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('product/ระเบิดของเล่น.jpg');"></div>
+            <div class="product-info">
+                <h2 class="product-title">สินค้าตัวอย่างที่ 4</h2>
+                <p class="product-price">฿3,590</p>
+                <p class="product-description">ของเล่นสำหรับเด็ก</p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+
+<!-- ไฟล์ style.css -->
+ .card-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    padding: 20px;
+    justify-content: center;
+    background-color: #f0f0f0; 
+}
+
+
+.product-card {
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: white;
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    background-color: #ddd; 
+    background-size: cover;
+    background-position: center;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-title {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    color: #007bff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.product-description {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.product-button {
+    display: block;
+    background: linear-gradient(to right, #007bff, #0056b3);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+.product-button:hover {
+    background: linear-gradient(to right, #0056b3, #003980);
+}
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![alt text](<images/ผลการทดลองที่ 3.jpg>)
 
 [](#การทดลองที่-4-การจัดการขนาดและระยะห่าง)
 ## การทดลองที่ 4: การจัดการขนาดและระยะห่าง
