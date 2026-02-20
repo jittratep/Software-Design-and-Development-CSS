@@ -251,8 +251,9 @@ div > p {
     </nav>
 </body>
 </html>
-
-<!-- ไฟล์ style.css -->
+```
+```css
+/*ไฟล์ style.css*/
 nav {
     background-color: #1a237e; 
     padding: 15px;
@@ -444,8 +445,9 @@ background-size: cover;
     </div>
 </body>
 </html>
-
-<!-- ไฟล์ style.css -->
+```
+```css
+/*ไฟล์ style.css*/
  .card-container {
     display: flex;
     flex-wrap: wrap; 
@@ -606,12 +608,82 @@ border: 1px solid black;
 
 ### ผลการทดลอง
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การทดลองที่ 4: การจัดการขนาดและระยะห่าง</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stats-container">
+        <div class="stat-box">
+            <div class="stat-number">1,234</div>
+            <div class="stat-label">ผู้ใช้งาน</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">5.6K</div>
+            <div class="stat-label">ยอดขาย</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">98%</div>
+            <div class="stat-label">ความพึงพอใจ</div>
+        </div>
+    </div>
+</body>
+</html>
 ```
 ```css
-[วางโค้ด CSS ที่นี่]
+/*ไฟล์ style.css*/
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.stat-box {
+    flex: 1;
+    margin: 0 15px;
+    padding: 5rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.stat-number {
+    font-size: 5em;
+    font-weight: bold;
+    color: #00ccff;
+    margin-bottom: 0.5rem;
+    font-family: sans-serif;
+}
+
+.stat-label {
+    font-size: 1.5rem;
+    color: #00ccff6c;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    
+}   
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .stats-container {
+        flex-direction: column;
+    }
+
+    .stat-box {
+        margin: 1rem 0;
+    }
+}
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![alt text](<images/ผลการทดลองที่ 4.png>)
 
 [](#การทดลองที่-5-การจัดการข้อความและฟอนต์)
 ## การทดลองที่ 5: การจัดการข้อความและฟอนต์
